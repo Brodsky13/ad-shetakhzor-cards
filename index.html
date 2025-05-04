@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карточки: Юваль Даян - Ад Шетахзор</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f0f4f8; }
+    h1 { text-align: center; }
+    .card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 16px; margin: 12px auto; max-width: 600px; transition: all 0.3s ease; cursor: pointer; }
+    .card:hover { transform: scale(1.02); }
+    .hebrew { font-size: 20px; font-weight: bold; color: #2c3e50; }
+    .transcription, .translation { margin-top: 8px; display: none; }
+    .card.revealed .transcription, .card.revealed .translation { display: block; }
+  </style>
+</head>
+<body>
+  <h1>Карточки для изучения: «Ад Шетахзор»</h1>
+
+  <div class="card" onclick="this.classList.toggle('revealed')">
+    <div class="hebrew">שם בין ההרים ובין כפרים אתה עובר</div>
+    <div class="transcription">Шам бен hаhарим увен кфарим ата овер</div>
+    <div class="translation">Там, между горами и деревнями, ты проходишь</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('revealed')">
+    <div class="hebrew">שדות פתוחים מלאים בתות</div>
+    <div class="transcription">Садот птухим млеим батут</div>
+    <div class="translation">Открытые поля, полные клубники</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('revealed')">
+    <div class="hebrew">וריח גשם מתגבר</div>
+    <div class="transcription">Вереах гешем митгабер</div>
+    <div class="translation">И запах дождя усиливается</div>
+  </div>
+</body>
+</html>
